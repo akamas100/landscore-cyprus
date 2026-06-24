@@ -1,0 +1,3032 @@
+{
+  "meta": {
+    "version": "v10.0",
+    "note": "Indicative placeholders. Replace with real comparables, DLS sales or listings."
+  },
+  "records": [
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λακατάμειας",
+      "community": "Anthoupolis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λακατάμειας",
+      "community": "Lakatameia",
+      "land": 330,
+      "sale": 2400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λακατάμειας",
+      "community": "Tseri",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λατσιών–Γερίου",
+      "community": "Latsia",
+      "land": 300,
+      "sale": 2300,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λατσιών–Γερίου",
+      "community": "Geri",
+      "land": 290,
+      "sale": 2250,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λευκωσίας",
+      "community": "Aglandjia",
+      "land": 370,
+      "sale": 2600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λευκωσίας",
+      "community": "Agios Dometios",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λευκωσίας",
+      "community": "Engomi",
+      "land": 650,
+      "sale": 3600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Λευκωσίας",
+      "community": "Nicosia",
+      "land": 650,
+      "sale": 3400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Alambra",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Dali",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Lympia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Nisou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Pera Chorio",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+      "community": "Potamia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Δήμος Στροβόλου",
+      "community": "Strovolos",
+      "land": 520,
+      "sale": 3000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Analiontas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Ayia Varvara",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Kotsiatis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Lythrodontas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Maryi",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Mathiatis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαχαιρά",
+      "community": "Sia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Anayeia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Episkopeio",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Ergates",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Kambia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Kapedes",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Kato Deftera",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Pano Deftera",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Pera",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Politiko",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ταμασού",
+      "community": "Psimolofou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Agrokipia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Arediou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Ayios Epifanios",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Ayios Ioannis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Farmakas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Fikardou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Gourri",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Kalo Chorio",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Kambi",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Klirou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Lazanias",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Malounta",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Ορεινής",
+      "community": "Mitsero",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Alithinou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Alona",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Apliki",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Askas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Fterikoudi",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Lagoudera",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Livadia",
+      "land": 300,
+      "sale": 2400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Palaichori Morphou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Palaichori Oreinis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Platanistasa",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Polystypos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+      "community": "Saranti",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Akaki",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Astromeritis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Ayia Eirini",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Ayia Marina Xyliatou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Ayios Yeoryios Kafkallou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Kannavia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Kato Koutrafas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Kato Moni",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Nikitari",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Orounta",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Peristerona",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Potami",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Vyzakia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Μόρφου",
+      "community": "Xyliatos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Ayioi Trimithias",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Deneia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Kokkinotrimithia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Mammari",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Meniko",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Εξαπόλεως",
+      "community": "Palaiometocho",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Ayios Theodoros Soleas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Evrychou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Flasou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Galata",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Kakopetria",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Kaliana",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Katydata",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Korakou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Linou",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Sinaoros",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Spilia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Σολέας",
+      "community": "Temvria",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Kalopanayiotis",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Kambos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Moutoullas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Mylikouri",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Oikos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Pedoulas",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Tsakistra",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Βόρειας Μαραθάσας",
+      "community": "Yerakies",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Τηλλυρίας",
+      "community": "Kato Pyrgos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Τηλλυρίας",
+      "community": "Mosfili",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Τηλλυρίας",
+      "community": "Pachyammos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Τηλλυρίας",
+      "community": "Pano Pyrgos",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λευκωσία",
+      "municipality": "Σύμπλεγμα Τηλλυρίας",
+      "community": "Piyenia",
+      "land": 120,
+      "sale": 1700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Αγίας Νάπας",
+      "community": "Achna",
+      "land": 90,
+      "sale": 1500,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Αγίας Νάπας",
+      "community": "Avgorou",
+      "land": 180,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Αγίας Νάπας",
+      "community": "Agia Napa",
+      "land": 650,
+      "sale": 4500,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Αγίας Νάπας",
+      "community": "Liopetri",
+      "land": 90,
+      "sale": 1500,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Αγίας Νάπας",
+      "community": "Sotira",
+      "land": 220,
+      "sale": 2000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Παραλιμνίου–Δερύνειας",
+      "community": "Acheritou",
+      "land": 90,
+      "sale": 1500,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Παραλιμνίου–Δερύνειας",
+      "community": "Deryneia",
+      "land": 190,
+      "sale": 1900,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Παραλιμνίου–Δερύνειας",
+      "community": "Frenaros",
+      "land": 90,
+      "sale": 1500,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Αμμόχωστος",
+      "municipality": "Δήμος Παραλιμνίου–Δερύνειας",
+      "community": "Paralimni",
+      "land": 300,
+      "sale": 2400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Αραδίππου",
+      "community": "Aradippou",
+      "land": 260,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Αραδίππου",
+      "community": "Kellia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Αραδίππου",
+      "community": "Troulloi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Αθηένου",
+      "community": "Athienou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Αθηένου",
+      "community": "Avdellero",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Δρομολαξιάς–Μενεού",
+      "community": "Dromolaxia-Meneou",
+      "land": 240,
+      "sale": 2100,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Δρομολαξιάς–Μενεού",
+      "community": "Kiti",
+      "land": 260,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Δρομολαξιάς–Μενεού",
+      "community": "Perivolia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Δρομολαξιάς–Μενεού",
+      "community": "Tersefanou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λάρνακας",
+      "community": "Larnaca",
+      "land": 420,
+      "sale": 2800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λάρνακας",
+      "community": "Livadia",
+      "land": 300,
+      "sale": 2400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λάρνακας",
+      "community": "Oroklini",
+      "land": 280,
+      "sale": 2300,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Delikipos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Kato Lefkara",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Kornos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Lageia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Pano Lefkara",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Skarinou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Δήμος Λευκάρων",
+      "community": "Vavla",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Δεκέλειας",
+      "community": "Ormideia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Δεκέλειας",
+      "community": "Xylofagou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Δεκέλειας",
+      "community": "Xylotymvou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Alaminos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Alethriko",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Anafotida",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Anglisides",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Kivisili",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Klavdia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Kofinou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Mazotos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+      "community": "Menoyeia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ποταμού Τρέμιθου",
+      "community": "Ayia Anna",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ποταμού Τρέμιθου",
+      "community": "Kalo Chorio",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ποταμού Τρέμιθου",
+      "community": "Mosfiloti",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ποταμού Τρέμιθου",
+      "community": "Psevdas",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ποταμού Τρέμιθου",
+      "community": "Pyrga",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Ayioi Vavatsinias",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Kato Drys",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Melini",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Odou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Ora",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Ορεινής Λάρνακας",
+      "community": "Vavatsinia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Ayios Theodoros",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Choirokoitia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Kalavasos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Mari",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Maroni",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Psematismenos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Tochni",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+      "community": "Zyyi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λάρνακα",
+      "municipality": "Πύλα",
+      "community": "Pyla",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Akrounta",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Armenochori",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Agios Athanasios",
+      "land": 520,
+      "sale": 4000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Agios Tychonas",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Foinikaria",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Mathikoloni",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Mouttagiaka",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Αμαθούντας",
+      "community": "Germasogeia",
+      "land": 700,
+      "sale": 5200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Λεμεσού",
+      "community": "Limassol",
+      "land": 650,
+      "sale": 4200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Λεμεσού",
+      "community": "Mesa Geitonia",
+      "land": 550,
+      "sale": 3900,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Λεμεσού",
+      "community": "Tserkezoi",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Πολεμιδιών",
+      "community": "Kato Polemidia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Πολεμιδιών",
+      "community": "Pano Polemidia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Akrotiri",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Asomatos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Episkopi",
+      "land": 180,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Erimi",
+      "land": 250,
+      "sale": 2800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Kantou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Kolossi",
+      "land": 280,
+      "sale": 3000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Sotira",
+      "land": 220,
+      "sale": 2000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Trachoni",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Δήμος Κουρίου",
+      "community": "Ypsonas",
+      "land": 320,
+      "sale": 3300,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Asgata",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Kellaki",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Monagroulli",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Moni",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Parekklisia",
+      "land": 300,
+      "sale": 3000,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Pentakomo",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Prastio Kellakiou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Pyrgos",
+      "land": 320,
+      "sale": 3100,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Sanida",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ανατολικής Λεμεσού",
+      "community": "Vasa Kellakiou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Akapnou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Arakapas",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Ayios Konstantinos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Ayios Pavlos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Dierona",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Eptagoneia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Kalo Chorio",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Klonari",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Louvaras",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Sykopetra",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Vikla",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Αμαθούντας",
+      "community": "Zoopiyi",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Apsiou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Fasoula",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Palodeia",
+      "land": 240,
+      "sale": 2700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Paramytha",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Spitali",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+      "community": "Yerasa",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Alassa",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Apesia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Ayios Mamas",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Ayios Yeoryios",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Doros",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Kapileio",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Korfi",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Laneia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Limnatis",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Monagri",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Silikou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+      "community": "Trimiklini",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Alektora",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Anogyra",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Avdimou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Ayios Thomas",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Paramali",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Pissouri",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Platanisteia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Δυτικής Λεμεσού",
+      "community": "Prastio Avdimou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Arsos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Ayios Amvrosios",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Ayios Therapon",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Dora",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Kissousa",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Lofou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Malia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Omodos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Pachna",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Pano Kivides",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Potamiou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Souni-Zanakia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Vasa Koilaniou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Vouni",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Κρασοχωρίων",
+      "community": "Yerovasa (Trozena)",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Ayios Dimitrios",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Foini",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Kaminaria",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Kato Platres",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Koilani",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Kouka",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Lemithou",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Mandria",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Moniatis",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Palaiomylos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Pano Platres",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Pera Pedi",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Prodromos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Τροόδους",
+      "community": "Treis Elies",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Agridia",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Agros",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Amiantos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Ayios Ioannis",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Ayios Theodoros",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Chandria",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Dymes",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Kato Mylos",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Kyperounta",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Pelendri",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Λεμεσός",
+      "municipality": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+      "community": "Potamitissa",
+      "land": 120,
+      "sale": 1800,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Akoursos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Ineia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Kathikas",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Kato Arodes",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Kissonerga",
+      "land": 250,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Pano Arodes",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ακάμα",
+      "community": "Pegeia",
+      "land": 260,
+      "sale": 2300,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ιεροκηπίας",
+      "community": "Acheleia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ιεροκηπίας",
+      "community": "Agia Marinouda",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ιεροκηπίας",
+      "community": "Konia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ιεροκηπίας",
+      "community": "Timi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Ιεροκηπίας",
+      "community": "Geroskipou",
+      "land": 310,
+      "sale": 2400,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πάφου",
+      "community": "Paphos",
+      "land": 380,
+      "sale": 2700,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Androlikou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Argaka",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Agia Marina Chrysochous",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Chrysochou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Drouseia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Kritou Terra",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Makounta",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Nea Dimmata",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Neo Chorio",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Pelathousa",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Polis Chrysochous",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Pomos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Terra",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Δήμος Πόλης Χρυσοχούς",
+      "community": "Gialia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Choli",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Filousa Chrysochous",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Goudi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Kynousa",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Lysos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Peristerona",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Skoulli",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Αρίστωνος",
+      "community": "Steni",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Anadiou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Ayios Dimitrianos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Drinia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Drymou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Fyti",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Kannaviou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Kato Akourdaleia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Kritou Marottou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Lasa",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Milia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Miliou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Pano Akourdaleia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Polemi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Psathi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Simou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Stroumbi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Theletra",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Πολεμίου",
+      "community": "Yiolou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Choulou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Episkopi",
+      "land": 180,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Kallepeia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Kourdaka",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Lemona",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Letymvou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Έζουσας",
+      "community": "Tsada",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Amaryeti",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Asproyia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Axylou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Ayia Marina Kelokedaron",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Eledio",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Galataria",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Koilineia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Pano Panayia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Pentalia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Ορεινής Πάφου",
+      "community": "Statos-Ayios Fotios",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Anarita",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Ayia Varvara",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Kouklia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Mandria",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Mousere",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Nata",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αφροδίτης Πάφου",
+      "community": "Pano Archimandrita",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Armou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Koili",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Marathounta",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Mesa Chorio",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Mesoyi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Tala",
+      "land": 280,
+      "sale": 2300,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Αγίου Νεοφύτου",
+      "community": "Tremithousa",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Arminou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Ayios Ioannis",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Ayios Nikolaos",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Ayios Yeoryios",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Choletria",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Fasoula",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Filousa Kelokedaron",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Kedares",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Kelokedara",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Kidasi",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Mamonia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Mesana",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Nikokleia",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Praitori",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Prastio",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Salamiou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Stavrokonnou",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Διαρίζου και Ξερού",
+      "community": "Trachypedoula",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Δυτικής Πάφου",
+      "community": "Chlorakas",
+      "land": 270,
+      "sale": 2200,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Πάφος",
+      "municipality": "Σύμπλεγμα Δυτικής Πάφου",
+      "community": "Emba",
+      "land": 100,
+      "sale": 1600,
+      "source": "indicative_placeholder"
+    },
+    {
+      "district": "Κερύνεια",
+      "municipality": "Κατεχόμενες περιοχές / ιστορική επαρχία",
+      "community": "Δεν ενσωματώθηκε σε λειτουργική βάση αγοράς λόγω κατεχόμενης περιοχής",
+      "land": 0,
+      "sale": 0,
+      "source": "indicative_placeholder"
+    }
+  ]
+}

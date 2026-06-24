@@ -1,0 +1,2294 @@
+{
+  "meta": {
+    "version": "v10.0",
+    "structure": "district -> municipality_or_complex -> community_or_municipal_district",
+    "coverage_note": "Covers the post-2024 local government reform structure for government-controlled areas using municipalities and community service complexes. Kyrenia is included only as a placeholder/occupied historical district.",
+    "data_quality": "Administrative structure prepared from public reform tables; market values are indicative placeholders and must be replaced by verified comparables/DLS sales/listings.",
+    "sources": [
+      "gov.cy / Ministry of Interior local government information",
+      "Local government reform public tables"
+    ]
+  },
+  "districts": {
+    "Λευκωσία": [
+      {
+        "name": "Δήμος Λακατάμειας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Anthoupolis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Lakatameia",
+            "land": 330,
+            "sale": 2400,
+            "lat": 35.1176,
+            "lng": 33.3137
+          },
+          {
+            "name": "Tseri",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Λατσιών–Γερίου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Latsia",
+            "land": 300,
+            "sale": 2300,
+            "lat": 35.099,
+            "lng": 33.377
+          },
+          {
+            "name": "Geri",
+            "land": 290,
+            "sale": 2250
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Λευκωσίας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Aglandjia",
+            "land": 370,
+            "sale": 2600,
+            "lat": 35.1545,
+            "lng": 33.3963
+          },
+          {
+            "name": "Agios Dometios",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Engomi",
+            "land": 650,
+            "sale": 3600,
+            "lat": 35.1665,
+            "lng": 33.3206
+          },
+          {
+            "name": "Nicosia",
+            "land": 650,
+            "sale": 3400,
+            "lat": 35.1856,
+            "lng": 33.3823
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Νότιας Λευκωσίας–Ιδαλίου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Alambra",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Dali",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Lympia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Nisou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pera Chorio",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Potamia",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Στροβόλου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Strovolos",
+            "land": 520,
+            "sale": 3000,
+            "lat": 35.148,
+            "lng": 33.34
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Μαχαιρά",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Analiontas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayia Varvara",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kotsiatis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Lythrodontas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Maryi",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Mathiatis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Sia",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ταμασού",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Anayeia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Episkopeio",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ergates",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kambia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kapedes",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kato Deftera",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pano Deftera",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pera",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Politiko",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Psimolofou",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ορεινής",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Agrokipia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Arediou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayios Epifanios",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayios Ioannis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Farmakas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Fikardou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Gourri",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kalo Chorio",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kambi",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Klirou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Lazanias",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Malounta",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Mitsero",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Μαδαρή–Παπούτσα",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Alithinou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Alona",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Apliki",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Askas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Fterikoudi",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Lagoudera",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Livadia",
+            "land": 300,
+            "sale": 2400,
+            "lat": 34.9516,
+            "lng": 33.6286
+          },
+          {
+            "name": "Palaichori Morphou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Palaichori Oreinis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Platanistasa",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Polystypos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Saranti",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Μόρφου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Akaki",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Astromeritis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayia Eirini",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayia Marina Xyliatou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Ayios Yeoryios Kafkallou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kannavia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kato Koutrafas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kato Moni",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Nikitari",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Orounta",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Peristerona",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Potami",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Vyzakia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Xyliatos",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Εξαπόλεως",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayioi Trimithias",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Deneia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kokkinotrimithia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Mammari",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Meniko",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Palaiometocho",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Σολέας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayios Theodoros Soleas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Evrychou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Flasou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Galata",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kakopetria",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kaliana",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Katydata",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Korakou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Linou",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Sinaoros",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Spilia",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Temvria",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Βόρειας Μαραθάσας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Kalopanayiotis",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Kambos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Moutoullas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Mylikouri",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Oikos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pedoulas",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Tsakistra",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Yerakies",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Τηλλυρίας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Kato Pyrgos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Mosfili",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pachyammos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Pano Pyrgos",
+            "land": 120,
+            "sale": 1700
+          },
+          {
+            "name": "Piyenia",
+            "land": 120,
+            "sale": 1700
+          }
+        ]
+      }
+    ],
+    "Αμμόχωστος": [
+      {
+        "name": "Δήμος Αγίας Νάπας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Achna",
+            "land": 90,
+            "sale": 1500
+          },
+          {
+            "name": "Avgorou",
+            "land": 180,
+            "sale": 1800
+          },
+          {
+            "name": "Agia Napa",
+            "land": 650,
+            "sale": 4500,
+            "lat": 34.992,
+            "lng": 34.014
+          },
+          {
+            "name": "Liopetri",
+            "land": 90,
+            "sale": 1500
+          },
+          {
+            "name": "Sotira",
+            "land": 220,
+            "sale": 2000,
+            "lat": 35.028,
+            "lng": 33.951
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Παραλιμνίου–Δερύνειας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Acheritou",
+            "land": 90,
+            "sale": 1500
+          },
+          {
+            "name": "Deryneia",
+            "land": 190,
+            "sale": 1900,
+            "lat": 35.0648,
+            "lng": 33.9608
+          },
+          {
+            "name": "Frenaros",
+            "land": 90,
+            "sale": 1500
+          },
+          {
+            "name": "Paralimni",
+            "land": 300,
+            "sale": 2400,
+            "lat": 35.0395,
+            "lng": 33.9818
+          }
+        ]
+      }
+    ],
+    "Λάρνακα": [
+      {
+        "name": "Δήμος Αραδίππου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Aradippou",
+            "land": 260,
+            "sale": 2200,
+            "lat": 34.9514,
+            "lng": 33.5915
+          },
+          {
+            "name": "Kellia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Troulloi",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Αθηένου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Athienou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Avdellero",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Δρομολαξιάς–Μενεού",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Dromolaxia-Meneou",
+            "land": 240,
+            "sale": 2100,
+            "lat": 34.875,
+            "lng": 33.586
+          },
+          {
+            "name": "Kiti",
+            "land": 260,
+            "sale": 2200
+          },
+          {
+            "name": "Perivolia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Tersefanou",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Λάρνακας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Larnaca",
+            "land": 420,
+            "sale": 2800,
+            "lat": 34.9182,
+            "lng": 33.6201
+          },
+          {
+            "name": "Livadia",
+            "land": 300,
+            "sale": 2400,
+            "lat": 34.9516,
+            "lng": 33.6286
+          },
+          {
+            "name": "Oroklini",
+            "land": 280,
+            "sale": 2300,
+            "lat": 34.9833,
+            "lng": 33.65
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Λευκάρων",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Delikipos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kato Lefkara",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kornos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Lageia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pano Lefkara",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Skarinou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Vavla",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Δεκέλειας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ormideia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Xylofagou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Xylotymvou",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Νότιου Σταυροβουνίου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Alaminos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Alethriko",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Anafotida",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Anglisides",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kivisili",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Klavdia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kofinou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mazotos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Menoyeia",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ποταμού Τρέμιθου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayia Anna",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kalo Chorio",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mosfiloti",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Psevdas",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pyrga",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ορεινής Λάρνακας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayioi Vavatsinias",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kato Drys",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Melini",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Odou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ora",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Vavatsinia",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Βασιλικού–Πεντάσχοινου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayios Theodoros",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Choirokoitia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kalavasos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mari",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Maroni",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Psematismenos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Tochni",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Zyyi",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Πύλα",
+        "type": "community",
+        "communities": [
+          {
+            "name": "Pyla",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      }
+    ],
+    "Λεμεσός": [
+      {
+        "name": "Δήμος Αμαθούντας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Akrounta",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Armenochori",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Agios Athanasios",
+            "land": 520,
+            "sale": 4000,
+            "lat": 34.7207,
+            "lng": 33.0516
+          },
+          {
+            "name": "Agios Tychonas",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Foinikaria",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Mathikoloni",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Mouttagiaka",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Germasogeia",
+            "land": 700,
+            "sale": 5200,
+            "lat": 34.7208,
+            "lng": 33.0833
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Λεμεσού",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Limassol",
+            "land": 650,
+            "sale": 4200,
+            "lat": 34.6851,
+            "lng": 33.0442
+          },
+          {
+            "name": "Mesa Geitonia",
+            "land": 550,
+            "sale": 3900,
+            "lat": 34.705,
+            "lng": 33.045
+          },
+          {
+            "name": "Tserkezoi",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Πολεμιδιών",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Kato Polemidia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pano Polemidia",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Κουρίου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Akrotiri",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Asomatos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Episkopi",
+            "land": 180,
+            "sale": 2200,
+            "lat": 34.6714,
+            "lng": 32.9014
+          },
+          {
+            "name": "Erimi",
+            "land": 250,
+            "sale": 2800,
+            "lat": 34.68,
+            "lng": 32.918
+          },
+          {
+            "name": "Kantou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kolossi",
+            "land": 280,
+            "sale": 3000,
+            "lat": 34.6682,
+            "lng": 32.9291
+          },
+          {
+            "name": "Sotira",
+            "land": 220,
+            "sale": 2000,
+            "lat": 35.028,
+            "lng": 33.951
+          },
+          {
+            "name": "Trachoni",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ypsonas",
+            "land": 320,
+            "sale": 3300,
+            "lat": 34.6876,
+            "lng": 32.9575
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ανατολικής Λεμεσού",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Asgata",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kellaki",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Monagroulli",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Moni",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Parekklisia",
+            "land": 300,
+            "sale": 3000,
+            "lat": 34.745,
+            "lng": 33.158
+          },
+          {
+            "name": "Pentakomo",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Prastio Kellakiou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pyrgos",
+            "land": 320,
+            "sale": 3100,
+            "lat": 34.7419,
+            "lng": 33.1836
+          },
+          {
+            "name": "Sanida",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Vasa Kellakiou",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Αμαθούντας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Akapnou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Arakapas",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Konstantinos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Pavlos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Dierona",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Eptagoneia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kalo Chorio",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Klonari",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Louvaras",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Sykopetra",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Vikla",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Zoopiyi",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ημιορεινής Λεμεσού",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Apsiou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Fasoula",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Palodeia",
+            "land": 240,
+            "sale": 2700
+          },
+          {
+            "name": "Paramytha",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Spitali",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Yerasa",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Κουρίου & Ξυλούρικου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Alassa",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Apesia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Mamas",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Yeoryios",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Doros",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kapileio",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Korfi",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Laneia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Limnatis",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Monagri",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Silikou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Trimiklini",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Δυτικής Λεμεσού",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Alektora",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Anogyra",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Avdimou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Thomas",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Paramali",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pissouri",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Platanisteia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Prastio Avdimou",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Κρασοχωρίων",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Arsos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Amvrosios",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Therapon",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Dora",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kissousa",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Lofou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Malia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Omodos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pachna",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pano Kivides",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Potamiou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Souni-Zanakia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Vasa Koilaniou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Vouni",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Yerovasa (Trozena)",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Τροόδους",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Ayios Dimitrios",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Foini",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kaminaria",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kato Platres",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Koilani",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kouka",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Lemithou",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Mandria",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Moniatis",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Palaiomylos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pano Platres",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pera Pedi",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Prodromos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Treis Elies",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ορεινής Πιτσιλιάς",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Agridia",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Agros",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Amiantos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Ioannis",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Ayios Theodoros",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Chandria",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Dymes",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kato Mylos",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Kyperounta",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Pelendri",
+            "land": 120,
+            "sale": 1800
+          },
+          {
+            "name": "Potamitissa",
+            "land": 120,
+            "sale": 1800
+          }
+        ]
+      }
+    ],
+    "Πάφος": [
+      {
+        "name": "Δήμος Ακάμα",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Akoursos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ineia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kathikas",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kato Arodes",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kissonerga",
+            "land": 250,
+            "sale": 2200,
+            "lat": 34.8214,
+            "lng": 32.4019
+          },
+          {
+            "name": "Pano Arodes",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pegeia",
+            "land": 260,
+            "sale": 2300,
+            "lat": 34.8833,
+            "lng": 32.3833
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Ιεροκηπίας",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Acheleia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Agia Marinouda",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Konia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Timi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Geroskipou",
+            "land": 310,
+            "sale": 2400,
+            "lat": 34.7608,
+            "lng": 32.451
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Πάφου",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Paphos",
+            "land": 380,
+            "sale": 2700,
+            "lat": 34.772,
+            "lng": 32.4297
+          }
+        ]
+      },
+      {
+        "name": "Δήμος Πόλης Χρυσοχούς",
+        "type": "municipality",
+        "communities": [
+          {
+            "name": "Androlikou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Argaka",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Agia Marina Chrysochous",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Chrysochou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Drouseia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kritou Terra",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Makounta",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Nea Dimmata",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Neo Chorio",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pelathousa",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Polis Chrysochous",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pomos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Terra",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Gialia",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Αγίου Αρίστωνος",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Choli",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Filousa Chrysochous",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Goudi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kynousa",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Lysos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Peristerona",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Skoulli",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Steni",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Πολεμίου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Anadiou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayios Dimitrianos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Drinia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Drymou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Fyti",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kannaviou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kato Akourdaleia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kritou Marottou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Lasa",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Milia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Miliou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pano Akourdaleia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Polemi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Psathi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Simou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Stroumbi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Theletra",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Yiolou",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Έζουσας",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Choulou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Episkopi",
+            "land": 180,
+            "sale": 2200,
+            "lat": 34.6714,
+            "lng": 32.9014
+          },
+          {
+            "name": "Kallepeia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kourdaka",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Lemona",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Letymvou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Tsada",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Ορεινής Πάφου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Amaryeti",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Asproyia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Axylou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayia Marina Kelokedaron",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Eledio",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Galataria",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Koilineia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pano Panayia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pentalia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Statos-Ayios Fotios",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Αφροδίτης Πάφου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Anarita",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayia Varvara",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kouklia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mandria",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mousere",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Nata",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Pano Archimandrita",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Αγίου Νεοφύτου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Armou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Koili",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Marathounta",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mesa Chorio",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mesoyi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Tala",
+            "land": 280,
+            "sale": 2300,
+            "lat": 34.837,
+            "lng": 32.432
+          },
+          {
+            "name": "Tremithousa",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Διαρίζου και Ξερού",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Arminou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayios Ioannis",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayios Nikolaos",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Ayios Yeoryios",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Choletria",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Fasoula",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Filousa Kelokedaron",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kedares",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kelokedara",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Kidasi",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mamonia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Mesana",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Nikokleia",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Praitori",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Prastio",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Salamiou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Stavrokonnou",
+            "land": 100,
+            "sale": 1600
+          },
+          {
+            "name": "Trachypedoula",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      },
+      {
+        "name": "Σύμπλεγμα Δυτικής Πάφου",
+        "type": "complex",
+        "communities": [
+          {
+            "name": "Chlorakas",
+            "land": 270,
+            "sale": 2200
+          },
+          {
+            "name": "Emba",
+            "land": 100,
+            "sale": 1600
+          }
+        ]
+      }
+    ],
+    "Κερύνεια": [
+      {
+        "name": "Κατεχόμενες περιοχές / ιστορική επαρχία",
+        "type": "occupied_note",
+        "communities": [
+          {
+            "name": "Δεν ενσωματώθηκε σε λειτουργική βάση αγοράς λόγω κατεχόμενης περιοχής",
+            "land": 0,
+            "sale": 0
+          }
+        ]
+      }
+    ]
+  }
+}
