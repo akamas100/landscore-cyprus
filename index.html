@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>LandScore Cyprus v10.1 GIS Integration</title>
+<title>LandScore Cyprus v10.2 Parcel Click Lookup</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
@@ -13,9 +13,9 @@
 </style>
 </head>
 <body>
-<header><h1>🏡 LandScore Cyprus v10.1 GIS Professional</h1><p>GIS Click Integration • DLS Parcels Experimental • District → Municipality/Complex → Community</p></header>
+<header><h1>🏡 LandScore Cyprus v10.2 Parcel Click</h1><p>Click Parcel Lookup • DLS Parcels Experimental • District → Municipality/Complex → Community</p></header>
 <div class="container">
- <div class="notice"><b>Έκδοση v10.1:</b> GIS Integration Edition με νέα διοικητική δομή Επαρχία → Δήμος/Σύμπλεγμα → Κοινότητα, πλήρη αρχική βάση περιοχών για τις ελεύθερες περιοχές, Market Intelligence και προετοιμασία για εξωτερικά JSON datasets και πειραματική ανάκτηση γεωτεμαχίου από δημόσια DLS/INSPIRE ArcGIS REST υπηρεσία. Όλα τα πολεοδομικά/αγοραία δεδομένα είναι ενδεικτικά και πρέπει να επιβεβαιώνονται από επίσημες πηγές.</div>
+ <div class="notice"><b>Έκδοση v10.2:</b> Parcel Click Lookup Edition με νέα διοικητική δομή Επαρχία → Δήμος/Σύμπλεγμα → Κοινότητα, πλήρη αρχική βάση περιοχών για τις ελεύθερες περιοχές, Market Intelligence και προετοιμασία για εξωτερικά JSON datasets και πειραματική ανάκτηση γεωτεμαχίου από δημόσια DLS/INSPIRE ArcGIS REST υπηρεσία. Όλα τα πολεοδομικά/αγοραία δεδομένα είναι ενδεικτικά και πρέπει να επιβεβαιώνονται από επίσημες πηγές.</div>
  <div class="planbar input-only"><span class="planbadge">Subscription Mode:</span><select id="plan" onchange="setPlan()"><option value="free">Free</option><option value="pro" selected>Pro</option><option value="business">Business</option></select><span id="planInfo" class="small"></span></div>
  <div class="tabs input-only">
   <button class="tabbtn active" onclick="showTab('land',this)">1. Land Analysis</button>
@@ -60,10 +60,10 @@
      <div class="field"><label>Τμήμα / Τεμάχιο</label><input id="parcelNo" placeholder="προαιρετικό"></div>
     </div>
     <div id="map" class="mapbox"></div>
-    <div class="map-actions input-only"><button onclick="updateMapFromInputs()">Ενημέρωση σημείου</button><button class="blue" onclick="enableMapClickMode()">Επιλογή από χάρτη</button><button class="secondary" onclick="queryDLSParcel()">Ανάκτηση DLS τεμαχίου</button><button class="secondary" onclick="openGoogleMap()">Google Maps</button><button class="secondary" onclick="openDLSMap()">Χάρτης Κτηματολογίου</button><button class="secondary" onclick="copyCoordinates()">Αντιγραφή συντεταγμένων</button></div>
+    <div class="map-actions input-only"><button onclick="updateMapFromInputs()">Ενημέρωση σημείου</button><button class="blue" onclick="enableMapClickMode()">Κτύπησε τεμάχιο στον χάρτη</button><button class="secondary" onclick="queryDLSParcel()">Ανάκτηση DLS τεμαχίου</button><button class="secondary" onclick="openGoogleMap()">Google Maps</button><button class="secondary" onclick="openDLSMap()">Χάρτης Κτηματολογίου</button><button class="secondary" onclick="copyCoordinates()">Αντιγραφή συντεταγμένων</button></div>
     <div class="gisbox input-only">
       <b>Πειραματική σύνδεση DLS / Κτηματολογίου</b>
-      <p class="small">Πάτησε «Επιλογή από χάρτη», κλίκαρε πάνω στο τεμάχιο και μετά πάτησε «Ανάκτηση DLS τεμαχίου». Αν ο browser μπλοκάρει το δημόσιο service λόγω CORS, θα εμφανιστεί μήνυμα και θα χρησιμοποιήσεις το κουμπί «Χάρτης Κτηματολογίου».</p>
+      <p class="small">Πάτησε «Κτύπησε τεμάχιο στον χάρτη» και μετά κάνε κλικ ακριβώς πάνω στο τεμάχιο. Το πρόγραμμα θα συμπληρώσει Latitude/Longitude και θα προσπαθήσει αυτόματα να φέρει το αντίστοιχο DLS γεωτεμάχιο. Αν το δημόσιο service μπλοκαριστεί από τον browser ή δεν επιστρέψει στοιχεία, θα εμφανίσει τις συντεταγμένες και θα ανοίγεις τον επίσημο χάρτη Κτηματολογίου.</p>
       <div class="field"><label>DLS ArcGIS REST MapServer URL</label><input id="dlsServiceUrl" value="https://eservices.dls.moi.gov.cy/inspire/rest/services/INSPIRE/CP_CadastralParcels/MapServer"></div>
       <div id="dlsResult" class="status">Δεν έχει γίνει ακόμη ανάκτηση γεωτεμαχίου.</div>
     </div>
@@ -208,8 +208,8 @@ function applyCommunityData(){const u=currentUnit();const c=(u.communities||[]).
 function applyDevType(){const d=devDefaults[devType.value];sellablePct.value=d.sell;constructionCost.value=d.cost;calculateAll(false)}
 function getPoint(){let la=parseFloat(lat.value),ln=parseFloat(lng.value); if(!isNaN(la)&&!isNaN(ln))return[la,ln];return coords[community.value]||[35.1264,33.4299]}
 function initMap(){const pt=getPoint();map=L.map('map').setView(pt,13);const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles &copy; Esri'});L.control.layers({'OpenStreetMap':osm,'Satellite':sat}).addTo(map);marker=L.marker(pt).addTo(map).bindPopup('Τεμάχιο / Περιοχή αξιολόγησης');map.on('click',onMapClick);setTimeout(()=>map.invalidateSize(),300)}
-function onMapClick(e){if(!mapClickMode)return;lat.value=e.latlng.lat.toFixed(6);lng.value=e.latlng.lng.toFixed(6);updateMapFromInputs(false);dlsResult.innerHTML=`<b>Επιλέχθηκε σημείο:</b> ${lat.value}, ${lng.value}<br><span class="small">Πάτησε τώρα «Ανάκτηση DLS τεμαχίου».</span>`;mapClickMode=false;}
-function enableMapClickMode(){mapClickMode=true;dlsResult.innerHTML='Κάνε κλικ πάνω στο τεμάχιο στον χάρτη.';}
+function onMapClick(e){if(!mapClickMode)return;lat.value=e.latlng.lat.toFixed(6);lng.value=e.latlng.lng.toFixed(6);updateMapFromInputs(false);mapClickMode=false;if(map){map.getContainer().style.cursor='';}dlsResult.innerHTML=`<b>Επιλέχθηκε σημείο τεμαχίου:</b> ${lat.value}, ${lng.value}<br><span class="small">Γίνεται αυτόματη ανάκτηση DLS γεωτεμαχίου...</span>`;queryDLSParcel();}
+function enableMapClickMode(){mapClickMode=true;dlsResult.innerHTML='<b>Λειτουργία επιλογής τεμαχίου ενεργή.</b><br>Κάνε τώρα κλικ ακριβώς πάνω στο τεμάχιο στον χάρτη. Θα γίνει αυτόματα προσπάθεια ανάκτησης DLS.'; if(map){map.getContainer().style.cursor='crosshair';}}
 function updateMapFromInputs(show=true){if(!map)return;const pt=getPoint();marker.setLatLng(pt).bindPopup(`<b>${name.value||'Τεμάχιο'}</b><br>${community.value}<br>${zone.value.split(' - ')[0]}`).openPopup();map.setView(pt,15);if(show)alert('Ο χάρτης ενημερώθηκε.')}
 function openGoogleMap(){const pt=getPoint();window.open(`https://www.google.com/maps?q=${pt[0]},${pt[1]}`,'_blank')}
 function openDLSMap(){const pt=getPoint();window.open(`https://eservices.dls.moi.gov.cy/#/national/geoportalmapviewer`,'_blank')}
