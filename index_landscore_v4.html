@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LandScore Cyprus v4</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<style>
+:root{--green:#1f7a3a;--dark:#0f3d22;--light:#f4f7f4;--border:#d9e3d9}
+*{box-sizing:border-box}
+body{font-family:Arial,sans-serif;margin:0;background:#f4f4f4;color:#1f2933}
+header{background:linear-gradient(135deg,#1f7a3a,#0f3d22);color:white;padding:28px 18px;text-align:center}
+header h1{margin:0;font-size:34px}
+header p{margin:8px 0 0}
+.container{max-width:1150px;margin:24px auto;padding:0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:white;border-radius:14px;padding:20px;box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.card h2{margin-top:0;color:var(--green)}
+label{display:block;margin-top:12px;font-weight:bold}
+input,select{width:100%;padding:11px;margin-top:6px;border:1px solid var(--border);border-radius:8px;font-size:15px}
+button{width:100%;margin-top:18px;padding:14px;border:0;border-radius:10px;background:var(--green);color:white;font-size:17px;font-weight:bold;cursor:pointer}
+button:hover{background:#16642e}
+.pdf-btn{background:#17351f}
+.result{margin-top:18px;background:#eef8ef;border-left:6px solid var(--green);padding:18px;border-radius:10px}
+.score{font-size:42px;font-weight:bold;color:var(--green)}
+.badge{display:inline-block;padding:7px 12px;border-radius:999px;background:#dff2e4;color:#145c2c;font-weight:bold}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+td,th{border-bottom:1px solid #e5e7eb;padding:9px;text-align:left}
+.small{color:#607060;font-size:14px}
+.notice{background:#fff8dc;border-left:5px solid #d4a017;padding:12px;border-radius:8px;margin-top:12px}
+.footer{text-align:center;color:#667;margin:30px 0}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏡 LandScore Cyprus</h1>
+  <p>Professional Land Potential Report for Cyprus</p>
+</header>
+
+<div class="container">
+
+<div class="notice">
+  <b>Έκδοση v4:</b> Προστέθηκε δημιουργία PDF αναφοράς. Οι πολεοδομικές τιμές είναι ενδεικτικές και χρειάζονται επιβεβαίωση από επίσημες πηγές.
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h2>Στοιχεία Τεμαχίου</h2>
+
+<label>Όνομα / Περιγραφή τεμαχίου</label>
+<input id="plotName" type="text" value="Τεμάχιο αξιολόγησης">
+
+<label>Εμβαδόν τεμαχίου (τ.μ.)</label>
+<input id="area" type="number" value="598">
+
+<label>Πολεοδομική Ζώνη</label>
+<select id="zone" onchange="applyZoneDefaults()">
+  <option value="Ka1">Κα1 - Οικιστική υψηλής ανάπτυξης</option>
+  <option value="Ka2">Κα2 - Οικιστική</option>
+  <option value="Ka3">Κα3 - Οικιστική</option>
+  <option value="Ka4">Κα4 - Οικιστική μέση</option>
+  <option value="Ka5">Κα5 - Οικιστική χαμηλότερη</option>
+  <option value="Ka6">Κα6 - Οικιστική χαμηλή</option>
+  <option value="H1">Η1 - Οικιστική κοινοτήτων</option>
+  <option value="H2">Η2 - Οικιστική κοινοτήτων</option>
+  <option value="H3">Η3 - Οικιστική κοινοτήτων</option>
+  <option value="H4">Η4 - Χαμηλή οικιστική</option>
+  <option value="H5">Η5 - Πολύ χαμηλή οικιστική</option>
+  <option value="Eb">Εβ - Εμπορική</option>
+  <option value="T">Τουριστική</option>
+  <option value="B">Βιομηχανική</option>
+  <option value="G">Γεωργική</option>
+</select>
+
+<label>Συντελεστής Δόμησης (%)</label>
+<input id="building" type="number">
+
+<label>Ποσοστό Κάλυψης (%)</label>
+<input id="coverage" type="number">
+
+<label>Αριθμός Ορόφων</label>
+<input id="floors" type="number">
+
+<label>Πρόσοψη σε εγγεγραμμένο δρόμο</label>
+<select id="road">
+  <option value="yes">Ναι</option>
+  <option value="no">Όχι</option>
+</select>
+</div>
+
+<div class="card">
+<h2>Τοποθεσία & Υποδομές</h2>
+
+<label>Επαρχία</label>
+<select id="district">
+  <option value="Λεμεσός">Λεμεσός</option>
+  <option value="Λευκωσία">Λευκωσία</option>
+  <option value="Λάρνακα">Λάρνακα</option>
+  <option value="Πάφος">Πάφος</option>
+  <option value="Αμμόχωστος">Αμμόχωστος</option>
+</select>
+
+<label>Περιοχή / Κοινότητα</label>
+<input id="location" type="text" value="">
+
+<label>Απόσταση από πόλη (χλμ.)</label>
+<input id="city" type="number" value="8">
+
+<label>Απόσταση από θάλασσα (χλμ.)</label>
+<input id="sea" type="number" value="5">
+
+<label>Νερό</label>
+<select id="water"><option value="yes">Ναι</option><option value="no">Όχι</option></select>
+
+<label>Ηλεκτρισμός</label>
+<select id="electricity"><option value="yes">Ναι</option><option value="no">Όχι</option></select>
+
+<label>Αποχέτευση</label>
+<select id="sewerage"><option value="yes">Ναι</option><option value="no">Όχι</option></select>
+
+<label>Τιμή γης ανά τ.μ. (€)</label>
+<input id="price" type="number" value="250">
+
+<button onclick="calculate()">Υπολογισμός LandScore</button>
+<button class="pdf-btn" onclick="generatePDF()">📄 Δημιουργία Αναφοράς PDF</button>
+</div>
+
+</div>
+
+<div class="card result" id="result">
+  <div class="score">LandScore: --/100</div>
+  <p>Συμπλήρωσε τα στοιχεία και πάτησε υπολογισμό.</p>
+</div>
+
+<div class="card">
+<h2>Ενδεικτικός πίνακας ζωνών</h2>
+<table>
+<tr><th>Ζώνη</th><th>Δόμηση</th><th>Κάλυψη</th><th>Όροφοι</th></tr>
+<tr><td>Κα1</td><td>120%</td><td>50%</td><td>3</td></tr>
+<tr><td>Κα2</td><td>100%</td><td>50%</td><td>3</td></tr>
+<tr><td>Κα3</td><td>90%</td><td>50%</td><td>2</td></tr>
+<tr><td>Κα4</td><td>80%</td><td>45%</td><td>2</td></tr>
+<tr><td>Κα5</td><td>60%</td><td>35%</td><td>2</td></tr>
+<tr><td>Κα6</td><td>50%</td><td>30%</td><td>2</td></tr>
+<tr><td>Η1</td><td>120%</td><td>70%</td><td>3</td></tr>
+<tr><td>Η2</td><td>90%</td><td>50%</td><td>2</td></tr>
+<tr><td>Η3</td><td>60%</td><td>35%</td><td>2</td></tr>
+<tr><td>Η4</td><td>40%</td><td>25%</td><td>2</td></tr>
+<tr><td>Η5</td><td>30%</td><td>20%</td><td>2</td></tr>
+<tr><td>Εβ</td><td>140%</td><td>50%</td><td>4</td></tr>
+<tr><td>Τουριστική</td><td>45%</td><td>25%</td><td>3</td></tr>
+<tr><td>Βιομηχανική</td><td>90%</td><td>50%</td><td>2</td></tr>
+<tr><td>Γεωργική</td><td>10%</td><td>10%</td><td>1</td></tr>
+</table>
+</div>
+
+</div>
+
+<div class="footer">LandScore Cyprus v4</div>
+
+<script>
+const zoneDefaults = {
+  Ka1:{label:"Κα1",building:120,coverage:50,floors:3,score:20},
+  Ka2:{label:"Κα2",building:100,coverage:50,floors:3,score:19},
+  Ka3:{label:"Κα3",building:90,coverage:50,floors:2,score:18},
+  Ka4:{label:"Κα4",building:80,coverage:45,floors:2,score:16},
+  Ka5:{label:"Κα5",building:60,coverage:35,floors:2,score:13},
+  Ka6:{label:"Κα6",building:50,coverage:30,floors:2,score:11},
+  H1:{label:"Η1",building:120,coverage:70,floors:3,score:15},
+  H2:{label:"Η2",building:90,coverage:50,floors:2,score:14},
+  H3:{label:"Η3",building:60,coverage:35,floors:2,score:12},
+  H4:{label:"Η4",building:40,coverage:25,floors:2,score:10},
+  H5:{label:"Η5",building:30,coverage:20,floors:2,score:8},
+  Eb:{label:"Εβ",building:140,coverage:50,floors:4,score:19},
+  T:{label:"Τουριστική",building:45,coverage:25,floors:3,score:18},
+  B:{label:"Βιομηχανική",building:90,coverage:50,floors:2,score:11},
+  G:{label:"Γεωργική",building:10,coverage:10,floors:1,score:5}
+};
+
+let lastReport = null;
+
+function applyZoneDefaults(){
+  const z = document.getElementById("zone").value;
+  const data = zoneDefaults[z];
+  document.getElementById("building").value = data.building;
+  document.getElementById("coverage").value = data.coverage;
+  document.getElementById("floors").value = data.floors;
+}
+
+function getCategory(score){
+  if(score>=90) return "Εξαιρετικό";
+  if(score>=80) return "Πολύ Καλό";
+  if(score>=70) return "Καλό";
+  if(score>=60) return "Μέτριο";
+  return "Χαμηλό Επενδυτικό Ενδιαφέρον";
+}
+
+function getStars(score){
+  if(score>=90) return "★★★★★";
+  if(score>=80) return "★★★★";
+  if(score>=70) return "★★★";
+  if(score>=60) return "★★";
+  return "★";
+}
+
+function analysisText(report){
+  let txt = `Το τεμάχιο παρουσιάζει ${report.category.toLowerCase()} επενδυτικό ενδιαφέρον. `;
+  if(report.zone==="Κα1" || report.zone==="Κα2" || report.zone==="Εβ"){
+    txt += "Η ζώνη και ο υψηλός συντελεστής δόμησης ενισχύουν τη δυνατότητα αξιοποίησης. ";
+  }
+  if(report.road==="Ναι"){
+    txt += "Η πρόσοψη σε εγγεγραμμένο δρόμο αποτελεί σημαντικό πλεονέκτημα. ";
+  } else {
+    txt += "Η απουσία πρόσοψης σε εγγεγραμμένο δρόμο μειώνει την αναπτυξιακή ευελιξία. ";
+  }
+  if(report.cityKm<=10){
+    txt += "Η κοντινή απόσταση από αστικό κέντρο αυξάνει την εμπορευσιμότητα. ";
+  }
+  if(report.seaKm<=5){
+    txt += "Η σχετικά μικρή απόσταση από τη θάλασσα προσθέτει επιπλέον αξία. ";
+  }
+  return txt;
+}
+
+function collectReport(){
+  const area = Number(document.getElementById("area").value)||0;
+  const zoneKey = document.getElementById("zone").value;
+  const zone = zoneDefaults[zoneKey].label;
+  const building = Number(document.getElementById("building").value)||0;
+  const coverage = Number(document.getElementById("coverage").value)||0;
+  const floors = Number(document.getElementById("floors").value)||0;
+  const road = document.getElementById("road").value === "yes" ? "Ναι" : "Όχι";
+  const district = document.getElementById("district").value;
+  const location = document.getElementById("location").value || "-";
+  const cityKm = Number(document.getElementById("city").value)||0;
+  const seaKm = Number(document.getElementById("sea").value)||0;
+  const water = document.getElementById("water").value === "yes" ? "Ναι" : "Όχι";
+  const electricity = document.getElementById("electricity").value === "yes" ? "Ναι" : "Όχι";
+  const sewerage = document.getElementById("sewerage").value === "yes" ? "Ναι" : "Όχι";
+  const price = Number(document.getElementById("price").value)||0;
+
+  let score = 0;
+  score += zoneDefaults[zoneKey].score;
+  score += Math.min(building / 140 * 15, 15);
+  score += Math.min(coverage / 70 * 10, 10);
+  score += area >= 600 ? 10 : area >= 400 ? 8 : area >= 250 ? 6 : 3;
+  score += road === "Ναι" ? 10 : 2;
+  score += cityKm <= 5 ? 10 : cityKm <= 15 ? 7 : cityKm <= 30 ? 4 : 2;
+  score += seaKm <= 1 ? 5 : seaKm <= 5 ? 4 : seaKm <= 15 ? 2 : 1;
+  score += water === "Ναι" ? 2 : 0;
+  score += electricity === "Ναι" ? 2 : 0;
+  score += sewerage === "Ναι" ? 1 : 0;
+  score += price > 0 ? 5 : 0;
+  score = Math.round(Math.min(score,100));
+
+  const buildable = area * (building/100);
+  const covered = area * (coverage/100);
+  const value = area * price;
+
+  let suitability = [];
+  if(zoneKey.startsWith("Ka") || zoneKey.startsWith("H")) suitability.push("Κατοικίες", "Οικιστική ανάπτυξη");
+  if(building >= 90 && (zoneKey.startsWith("Ka") || zoneKey==="Eb")) suitability.push("Πολυκατοικία");
+  if(zoneKey==="Eb") suitability.push("Καταστήματα", "Γραφεία");
+  if(zoneKey==="T") suitability.push("Τουριστική ανάπτυξη");
+  if(zoneKey==="B") suitability.push("Βιομηχανική χρήση");
+  if(zoneKey==="G") suitability.push("Γεωργική χρήση");
+
+  const report = {
+    plotName: document.getElementById("plotName").value || "Τεμάχιο αξιολόγησης",
+    area, zone, building, coverage, floors, road, district, location, cityKm, seaKm,
+    water, electricity, sewerage, price, score,
+    category:getCategory(score),
+    stars:getStars(score),
+    buildable, covered, value,
+    suitability:suitability.join(", "),
+    date:new Date().toLocaleDateString("el-CY")
+  };
+  report.analysis = analysisText(report);
+  return report;
+}
+
+function calculate(){
+  const r = collectReport();
+  lastReport = r;
+  document.getElementById("result").innerHTML = `
+    <div class="score">LandScore: ${r.score}/100</div>
+    <p><span class="badge">${r.stars} ${r.category}</span></p>
+    <table>
+      <tr><td>Εκτιμώμενη αξία γης</td><td><b>€${r.value.toLocaleString("el-CY")}</b></td></tr>
+      <tr><td>Δυνητική δομήσιμη επιφάνεια</td><td><b>${r.buildable.toFixed(0)} τ.μ.</b></td></tr>
+      <tr><td>Μέγιστη κάλυψη</td><td><b>${r.covered.toFixed(0)} τ.μ.</b></td></tr>
+      <tr><td>Όροφοι</td><td><b>${r.floors}</b></td></tr>
+      <tr><td>Κατάλληλο για</td><td><b>${r.suitability}</b></td></tr>
+    </table>
+    <p><b>Αυτόματη ανάλυση:</b> ${r.analysis}</p>
+    <p class="small">Το αποτέλεσμα είναι ενδεικτικό και δεν αντικαθιστά επίσημη εκτίμηση, πολεοδομική πληροφόρηση ή έλεγχο τίτλου.</p>
+  `;
+}
+
+function generatePDF(){
+  const r = collectReport();
+  lastReport = r;
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(22);
+  doc.text("LandScore Cyprus", 20, 22);
+
+  doc.setFontSize(14);
+  doc.text("Professional Land Potential Report", 20, 32);
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(10);
+  doc.text(`Date: ${r.date}`, 150, 22);
+
+  doc.setDrawColor(31,122,58);
+  doc.setLineWidth(1);
+  doc.line(20, 38, 190, 38);
+
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(16);
+  doc.text("LandScore Result", 20, 52);
+
+  doc.setFontSize(28);
+  doc.setTextColor(31,122,58);
+  doc.text(`${r.score}/100`, 20, 68);
+
+  doc.setTextColor(0,0,0);
+  doc.setFontSize(12);
+  doc.text(`Category: ${r.category}`, 20, 78);
+
+  let y = 95;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(14);
+  doc.text("Plot Details", 20, y);
+  y += 10;
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(11);
+
+  const rows = [
+    ["Plot", r.plotName],
+    ["District", r.district],
+    ["Location", r.location],
+    ["Area", `${r.area} sq.m.`],
+    ["Planning Zone", r.zone],
+    ["Building Coefficient", `${r.building}%`],
+    ["Coverage", `${r.coverage}%`],
+    ["Floors", `${r.floors}`],
+    ["Registered Road Frontage", r.road],
+    ["Distance from City", `${r.cityKm} km`],
+    ["Distance from Sea", `${r.seaKm} km`],
+    ["Water", r.water],
+    ["Electricity", r.electricity],
+    ["Sewerage", r.sewerage]
+  ];
+
+  rows.forEach(row=>{
+    doc.setFont("helvetica", "bold");
+    doc.text(`${row[0]}:`, 20, y);
+    doc.setFont("helvetica", "normal");
+    doc.text(String(row[1]), 75, y);
+    y += 8;
+  });
+
+  y += 6;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(14);
+  doc.text("Calculations", 20, y);
+  y += 10;
+
+  doc.setFontSize(11);
+  const calcRows = [
+    ["Estimated Land Value", `EUR ${r.value.toLocaleString("el-CY")}`],
+    ["Buildable Area", `${r.buildable.toFixed(0)} sq.m.`],
+    ["Maximum Coverage", `${r.covered.toFixed(0)} sq.m.`],
+    ["Suitable For", r.suitability]
+  ];
+
+  calcRows.forEach(row=>{
+    doc.setFont("helvetica", "bold");
+    doc.text(`${row[0]}:`, 20, y);
+    doc.setFont("helvetica", "normal");
+    doc.text(String(row[1]), 75, y, {maxWidth:110});
+    y += 8;
+  });
+
+  y += 8;
+  doc.setFont("helvetica", "bold");
+  doc.setFontSize(14);
+  doc.text("Automatic Analysis", 20, y);
+  y += 10;
+
+  doc.setFont("helvetica", "normal");
+  doc.setFontSize(11);
+  const analysisEnglish = "This report provides an indicative land potential assessment based on zoning, building coefficient, road access, infrastructure, location and estimated land value. It does not replace official planning information, title search or professional valuation.";
+  doc.text(analysisEnglish, 20, y, {maxWidth:170});
+
+  doc.setFontSize(9);
+  doc.setTextColor(90,90,90);
+  doc.text("Disclaimer: Indicative report only. Always confirm with official planning and land registry data.", 20, 285);
+
+  doc.save(`LandScore_Report_${r.zone}_${r.area}sqm.pdf`);
+}
+
+applyZoneDefaults();
+</script>
+
+</body>
+</html>
