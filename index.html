@@ -1,1 +1,201 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LandScore Cyprus v7 Professional</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<style>
+:root{--green:#0f6b35;--dark:#0b3d22;--light:#eef8ef;--gold:#d99b00;--border:#d7e3d8;--text:#0b1f14;}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f3f5f4;color:var(--text)}
+header{background:linear-gradient(90deg,#176f37,#0b3d22);color:#fff;text-align:center;padding:30px 15px} header h1{margin:0;font-size:36px} header p{margin:8px 0 0;font-size:16px}
+.container{max-width:1180px;margin:24px auto;padding:0 14px}.notice{background:#fff7df;border-left:5px solid var(--gold);padding:14px 16px;border-radius:10px;margin-bottom:16px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 8px 24px rgba(0,0,0,.08)}h2{color:var(--green);margin-top:0}.field{margin:13px 0}label{display:block;font-weight:700;margin-bottom:7px}input,select,textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;font-size:15px;background:#fff}textarea{min-height:80px}button{background:var(--green);color:#fff;border:0;border-radius:10px;padding:14px 18px;font-weight:700;font-size:16px;cursor:pointer;margin:8px 6px 8px 0}button.secondary{background:#263238}button:hover{filter:brightness(.95)}.result{background:var(--light);border-left:6px solid var(--green);border-radius:14px;padding:22px;margin-top:18px}.score{font-size:46px;color:var(--green);font-weight:800}.badge{display:inline-block;padding:8px 13px;border-radius:999px;font-weight:800;margin:10px 0}.excellent{background:#d8f6df;color:#075719}.good{background:#fff3c4;color:#775300}.medium{background:#ffe4c2;color:#8a4300}.low{background:#ffd5d5;color:#8b0000}.rows{margin-top:12px}.row{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #dce7dd;padding:10px}.row b{text-align:right}.mini-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.pill{background:#f6faf7;border:1px solid var(--border);border-radius:12px;padding:14px}.kpi{font-size:22px;font-weight:800;color:var(--green);margin-top:5px}.profit{background:#eef8ef;border-left:5px solid var(--green)}.warn{background:#fff7df;border-left:5px solid var(--gold)}.swot{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.swot div{background:#f8fbf8;border:1px solid var(--border);border-radius:12px;padding:12px}.swot h3{margin:0 0 8px;color:var(--green)}ul{margin:8px 0 0;padding-left:20px}table{width:100%;border-collapse:collapse;margin-top:12px;background:#fff}th,td{padding:10px;border-bottom:1px solid #e1e8e2;text-align:left}th{color:#0b3d22}.small{font-size:13px;color:#53665a}.actions{margin-top:14px}.hidden{display:none}.mapbox{height:360px;border-radius:14px;border:1px solid var(--border);overflow:hidden;margin-top:12px}.map-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.map-actions button{font-size:14px;padding:11px 13px;margin:0}.coord-note{background:#eef8ef;border:1px solid var(--border);border-radius:10px;padding:10px;margin-top:10px}@media(max-width:850px){.grid,.mini-grid,.swot{grid-template-columns:1fr}.score{font-size:36px}.row{grid-template-columns:1fr}.row b{text-align:left;margin-top:4px}}
+@media print{button,.notice,.input-section{display:none!important}.card,.result{box-shadow:none;border:1px solid #ddd}.container{max-width:100%;margin:0}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>🏡 LandScore Cyprus v7 Professional</h1><p>Professional Developer Feasibility & Land Potential Report for Cyprus</p></header>
+<div class="container">
+ <div class="notice"><b>Έκδοση v7 Professional:</b> Αυτόματες ζώνες, αναλυτικό score, SWOT, σενάρια ανάπτυξης, σύγκριση τεμαχίων, χάρτης με επιλογή OpenStreetMap/Satellite, developer feasibility analysis, ROI, κουμπιά Google Maps / Κτηματολογίου και αναβαθμισμένο επαγγελματικό PDF. Οι πολεοδομικές τιμές/τιμές γης είναι ενδεικτικές και χρειάζονται επιβεβαίωση από επίσημες πηγές.</div>
+ <div class="grid input-section">
+  <div class="card">
+   <h2>Στοιχεία Τεμαχίου</h2>
+   <div class="field"><label>Όνομα / Περιγραφή τεμαχίου</label><input id="name" value="Τεμάχιο αξιολόγησης"></div>
+   <div class="field"><label>Εμβαδόν τεμαχίου (τ.μ.)</label><input id="area" type="number" value="598"></div>
+   <div class="field"><label>Πολεοδομική Ζώνη</label><select id="zone" onchange="applyZone()"></select></div>
+   <div class="mini-grid">
+    <div class="field"><label>Συντελεστής Δόμησης (%)</label><input id="building" type="number"></div>
+    <div class="field"><label>Ποσοστό Κάλυψης (%)</label><input id="coverage" type="number"></div>
+    <div class="field"><label>Αριθμός Ορόφων</label><input id="floors" type="number"></div>
+    <div class="field"><label>Πρόσοψη σε εγγεγραμμένο δρόμο</label><select id="road"><option>Ναι</option><option>Όχι</option></select></div>
+   </div>
+   <div class="field"><label>Σημειώσεις / Ιδιαιτερότητες</label><textarea id="notes" placeholder="π.χ. γωνιακό, θέα, εκκρεμότητες τίτλου, συνιδιοκτησία"></textarea></div>
+  </div>
+  <div class="card">
+   <h2>Τοποθεσία & Υποδομές</h2>
+   <div class="field"><label>Επαρχία</label><select id="district" onchange="populateCommunities()"><option>Λεμεσός</option><option>Λευκωσία</option><option>Λάρνακα</option><option>Πάφος</option><option>Αμμόχωστος</option></select></div>
+   <div class="field"><label>Περιοχή / Κοινότητα</label><select id="community" onchange="applyCommunityPrice()"></select></div>
+   <div class="mini-grid">
+    <div class="field"><label>Απόσταση από πόλη (χλμ.)</label><input id="cityKm" type="number" value="8"></div>
+    <div class="field"><label>Απόσταση από θάλασσα (χλμ.)</label><input id="seaKm" type="number" value="5"></div>
+    <div class="field"><label>Νερό</label><select id="water"><option>Ναι</option><option>Όχι</option></select></div>
+    <div class="field"><label>Ηλεκτρισμός</label><select id="electric"><option>Ναι</option><option>Όχι</option></select></div>
+    <div class="field"><label>Αποχέτευση</label><select id="sewer"><option>Ναι</option><option>Όχι</option></select></div>
+    <div class="field"><label>Τιμή γης ανά τ.μ. (€)</label><input id="price" type="number"></div>
+    <div class="field"><label>Latitude</label><input id="lat" placeholder="π.χ. 34.700000"></div>
+    <div class="field"><label>Longitude</label><input id="lng" placeholder="π.χ. 32.950000"></div>
+    <div class="field"><label>Φύλλο / Σχέδιο</label><input id="sheetPlan" placeholder="προαιρετικό"></div>
+    <div class="field"><label>Τμήμα / Τεμάχιο</label><input id="parcelNo" placeholder="προαιρετικό"></div>
+   </div>
+  </div>
+ </div>
+ <div class="actions input-section"><button onclick="calculate()">Υπολογισμός LandScore</button><button class="secondary" onclick="saveComparable()">Προσθήκη στη Σύγκριση</button><button class="secondary" onclick="updateMapFromInputs()">Ενημέρωση Χάρτη</button><button class="secondary" onclick="openGoogleMap()">Google Maps</button><button class="secondary" onclick="openDLSMap()">Χάρτης Κτηματολογίου</button><button class="secondary" onclick="downloadPDF()">PDF Report</button><button class="secondary" onclick="resetAll()">Νέα Υπόθεση</button></div>
+
+  <div class="card input-section">
+   <h2>Χάρτης Τεμαχίου</h2>
+   <div id="map" class="mapbox"></div>
+   <div class="map-actions">
+    <button onclick="updateMapFromInputs()">Ενημέρωση σημείου</button>
+    <button class="secondary" onclick="openGoogleMap()">Άνοιγμα Google Maps</button>
+    <button class="secondary" onclick="openDLSMap()">Άνοιγμα Κτηματολογίου</button>
+    <button class="secondary" onclick="copyCoordinates()">Αντιγραφή συντεταγμένων</button>
+   </div>
+   <div class="coord-note small">Ο ενσωματωμένος χάρτης χρησιμοποιεί OpenStreetMap για προβολή σημείου. Τα επίσημα κτηματολογικά/πολεοδομικά δεδομένα πρέπει να ελέγχονται στον επίσημο χάρτη του Τμήματος Κτηματολογίου και Χωρομετρίας.</div>
+  </div>
+
+ <div class="card input-section">
+  <h2>Developer Feasibility Analysis</h2>
+  <div class="mini-grid">
+   <div class="field"><label>Κόστος κατασκευής ανά τ.μ. (€)</label><input id="constructionCost" type="number" value="1300"></div>
+   <div class="field"><label>Τιμή πώλησης ανά δομήσιμο τ.μ. (€)</label><input id="salePrice" type="number" value="2400"></div>
+   <div class="field"><label>Soft costs / άδειες / μελετητές (%)</label><input id="softCostPct" type="number" value="12"></div>
+   <div class="field"><label>Contingency / απρόβλεπτα (%)</label><input id="contingencyPct" type="number" value="7"></div>
+   <div class="field"><label>Χρηματοδοτικό κόστος (%)</label><input id="financePct" type="number" value="6"></div>
+   <div class="field"><label>Προμήθειες πωλήσεων / marketing (%)</label><input id="salesCostPct" type="number" value="4"></div>
+  </div>
+  <p class="small">Η ανάλυση είναι ενδεικτική. Δεν αντικαθιστά προϋπολογισμό εργολάβου, μελέτη αρχιτέκτονα, φορολογικό/πολεοδομικό έλεγχο ή επίσημη εκτίμηση.</p>
+ </div>
+
+ <div id="report" class="hidden">
+  <div class="result"><div class="score" id="scoreText"></div><span id="badge" class="badge"></span><div class="rows" id="mainRows"></div><p id="autoAnalysis"></p><p class="small">Το αποτέλεσμα είναι ενδεικτικό και δεν αντικαθιστά επίσημη εκτίμηση, πολεοδομική πληροφορία ή έλεγχο τίτλου.</p></div>
+  <div class="grid">
+   <div class="card"><h2>Ανάλυση Βαθμολογίας</h2><canvas id="scoreChart"></canvas><div id="scoreBreakdown"></div></div>
+   <div class="card"><h2>Σενάρια Ανάπτυξης</h2><div id="development"></div></div>
+  </div>
+  <div class="card"><h2>Developer Feasibility</h2><div id="feasibility"></div></div>
+  <div class="card"><h2>SWOT Analysis</h2><div class="swot" id="swot"></div></div>
+  <div class="card"><h2>Σύγκριση Τεμαχίων</h2><table><thead><tr><th>Τεμάχιο</th><th>Περιοχή</th><th>Ζώνη</th><th>Score</th><th>Αξία</th><th>Δόμηση</th></tr></thead><tbody id="compareBody"></tbody></table></div>
+  <div class="card"><h2>Ενδεικτικός πίνακας ζωνών</h2><table id="zoneTable"></table></div>
+ </div>
+</div>
+<script>
+const zones={
+ 'Κα1 - Οικιστική υψηλής ανάπτυξης':{b:120,c:50,f:3,use:'Κατοικίες, Οικιστική ανάπτυξη, Πολυκατοικία'},
+ 'Κα2 - Οικιστική':{b:100,c:50,f:3,use:'Κατοικίες, Διαμερίσματα'},
+ 'Κα3 - Οικιστική':{b:90,c:50,f:2,use:'Κατοικίες, Μικρή ανάπτυξη'},
+ 'Κα4 - Οικιστική':{b:120,c:50,f:3,use:'Κατοικίες, Πολυκατοικία, Αστική ανάπτυξη'},
+ 'Κα5 - Οικιστική':{b:60,c:35,f:2,use:'Κατοικίες'},
+ 'Κα6 - Οικιστική':{b:50,c:30,f:2,use:'Κατοικίες χαμηλής πυκνότητας'},
+ 'Η2 - Οικιστική':{b:90,c:50,f:2,use:'Κατοικίες'},
+ 'Η3 - Οικιστική':{b:60,c:35,f:2,use:'Κατοικίες'},
+ 'Η4 - Οικιστική':{b:40,c:25,f:2,use:'Κατοικίες'},
+ 'Η5 - Οικιστική χαμηλής πυκνότητας':{b:30,c:20,f:2,use:'Κατοικίες χαμηλής πυκνότητας'},
+ 'Τ1 - Τουριστική':{b:30,c:20,f:3,use:'Τουριστική ανάπτυξη / ειδικοί όροι'},
+ 'Τ2 - Τουριστική':{b:45,c:25,f:3,use:'Τουριστική ανάπτυξη'},
+ 'Τ3 - Τουριστική':{b:25,c:20,f:2,use:'Τουριστική χαμηλής πυκνότητας'},
+ 'Εμ - Εμπορική':{b:160,c:50,f:4,use:'Εμπορική / γραφεία / μικτή ανάπτυξη'},
+ 'Βδ - Βιοτεχνική':{b:90,c:50,f:2,use:'Βιοτεχνία / αποθήκες'},
+ 'Γ3 - Γεωργική':{b:10,c:10,f:2,use:'Γεωργική χρήση / ειδικές άδειες'},
+ 'Βα3 - Βιομηχανική':{b:100,c:50,f:2,use:'Βιομηχανική / αποθήκες'},
+ 'Εβ - Εμπορική':{b:140,c:50,f:4,use:'Εμπορική / μικτή ανάπτυξη'}
+};
+const communities={
+ 'Λεμεσός':{'Λεμεσός Κέντρο':650,'Άγιος Αθανάσιος':520,'Ύψωνας':320,'Κολόσσι':280,'Έρημη':250,'Επισκοπή':180,'Παρεκκλησιά':300,'Παλώδια':240,'Πύργος':320},
+ 'Λευκωσία':{'Στρόβολος':520,'Λακατάμια':330,'Έγκωμη':650,'Λατσιά':300},
+ 'Λάρνακα':{'Λάρνακα Κέντρο':420,'Αραδίππου':260,'Λιβάδια':300,'Ορόκλινη':280},
+ 'Πάφος':{'Πάφος Κέντρο':380,'Γεροσκήπου':310,'Πέγεια':260,'Κισσόνεργα':250},
+ 'Αμμόχωστος':{'Παραλίμνι':300,'Δερύνεια':190,'Αγία Νάπα':650,'Πρωταράς':700}
+};
+let last=null, chart=null, comparisons=[], map=null, marker=null;
+const communityCoords={
+ 'Λεμεσός Κέντρο':[34.6851,33.0442],'Άγιος Αθανάσιος':[34.7207,33.0516],'Ύψωνας':[34.6876,32.9575],'Κολόσσι':[34.6682,32.9291],'Έρημη':[34.6800,32.9180],'Επισκοπή':[34.6714,32.9014],'Παρεκκλησιά':[34.7450,33.1580],'Παλώδια':[34.7487,33.0050],'Πύργος':[34.7419,33.1836],
+ 'Στρόβολος':[35.1480,33.3400],'Λακατάμια':[35.1176,33.3137],'Έγκωμη':[35.1665,33.3206],'Λατσιά':[35.0990,33.3770],
+ 'Λάρνακα Κέντρο':[34.9182,33.6201],'Αραδίππου':[34.9514,33.5915],'Λιβάδια':[34.9516,33.6286],'Ορόκλινη':[34.9833,33.6500],
+ 'Πάφος Κέντρο':[34.7720,32.4297],'Γεροσκήπου':[34.7608,32.4510],'Πέγεια':[34.8833,32.3833],'Κισσόνεργα':[34.8214,32.4019],
+ 'Παραλίμνι':[35.0395,33.9818],'Δερύνεια':[35.0648,33.9608],'Αγία Νάπα':[34.9920,34.0140],'Πρωταράς':[35.0125,34.0583]
+};
+function init(){Object.keys(zones).forEach(z=>zone.add(new Option(z,z)));populateCommunities();applyZone();renderZoneTable();initMap();}
+function applyZone(){const z=zones[zone.value];building.value=z.b;coverage.value=z.c;floors.value=z.f;}
+function populateCommunities(){community.innerHTML='';Object.keys(communities[district.value]).forEach(c=>community.add(new Option(c,c)));applyCommunityPrice();}
+function applyCommunityPrice(){price.value=communities[district.value][community.value]||0; if(map) updateMapFromCommunity();}
+function yes(v){return v==='Ναι'} function clamp(n,min,max){return Math.max(min,Math.min(max,n))} function euro(n){return '€'+Math.round(n).toLocaleString('el-GR')} function sqm(n){return Math.round(n).toLocaleString('el-GR')+' τ.μ.'}
+function calculate(){
+ const a=+area.value||0,b=+building.value||0,c=+coverage.value||0,f=+floors.value||0,p=+price.value||0,ck=+cityKm.value||0,sk=+seaKm.value||0;
+ const buildable=a*b/100, cover=a*c/100, value=a*p;
+ const urban=clamp((b/140)*25 + (c/50)*8 + Math.min(f,4)*1.75,0,40);
+ const infra=(yes(water.value)?7:0)+(yes(electric.value)?7:0)+(yes(sewer.value)?6:0);
+ const loc=clamp(20-(ck*1.2),0,20); const access=yes(road.value)?10:3; const sea=clamp(10-(sk*1.1),0,10);
+ const total=Math.round(urban+infra+loc+access+sea); const grade=total>=80?'A':total>=70?'B+':total>=60?'B':total>=40?'C':'D';
+ last={name:name.value,area:a,zone:zone.value,community:community.value,lat:lat.value,lng:lng.value,sheetPlan:sheetPlan.value,parcelNo:parcelNo.value,score:total,grade,value,buildable,cover,floors:f,use:zones[zone.value].use,breakdown:{'Πολεοδομικό δυναμικό':Math.round(urban),'Υποδομές':infra,'Τοποθεσία':Math.round(loc),'Πρόσβαση':access,'Θάλασσα':Math.round(sea)}};
+ report.classList.remove('hidden');scoreText.textContent=`LandScore: ${total}/100`;badge.textContent=`${grade} ${total>=80?'Εξαιρετικό':total>=60?'Καλό':total>=40?'Μέτριο':'Χαμηλό'}`;badge.className='badge '+(total>=80?'excellent':total>=60?'good':total>=40?'medium':'low');
+ mainRows.innerHTML=`<div class="row"><span>Εκτιμώμενη αξία γης</span><b>${euro(value)}</b></div><div class="row"><span>Δυνητική δομήσιμη επιφάνεια</span><b>${sqm(buildable)}</b></div><div class="row"><span>Μέγιστη κάλυψη</span><b>${sqm(cover)}</b></div><div class="row"><span>Όροφοι</span><b>${f}</b></div><div class="row"><span>Κατάλληλο για</span><b>${last.use}</b></div>`;
+ autoAnalysis.textContent=`Αυτόματη ανάλυση: Το τεμάχιο παρουσιάζει ${total>=80?'πολύ υψηλό':total>=60?'καλό':total>=40?'μέτριο':'χαμηλό'} επενδυτικό ενδιαφέρον. Η ζώνη ${zone.value.split(' ')[0]} και ο συντελεστής δόμησης ${b}% δίνουν δυνατότητα αξιοποίησης περίπου ${sqm(buildable)}. ${yes(road.value)?'Η πρόσοψη σε εγγεγραμμένο δρόμο αποτελεί σημαντικό πλεονέκτημα.':'Η απουσία πρόσοψης σε εγγεγραμμένο δρόμο μειώνει σημαντικά την αξιοποιησιμότητα.'}`;
+ renderBreakdown();renderDevelopment();renderFeasibility();renderSWOT();renderComparison();updateMapFromInputs(false);setTimeout(()=>window.scrollTo({top:report.offsetTop-10,behavior:'smooth'}),100);
+}
+function renderBreakdown(){const labels=Object.keys(last.breakdown),data=Object.values(last.breakdown);scoreBreakdown.innerHTML=labels.map((l,i)=>`<div class="row"><span>${l}</span><b>${data[i]}/${[40,20,20,10,10][i]}</b></div>`).join(''); if(chart)chart.destroy(); chart=new Chart(scoreChart,{type:'bar',data:{labels,datasets:[{label:'Βαθμολογία',data}]},options:{scales:{y:{beginAtZero:true,max:40}},plugins:{legend:{display:false}}}});}
+function renderDevelopment(){const u=last.buildable; const flat85=Math.floor(u/85), flat110=Math.floor(u/110), houses=Math.floor(last.area/200); development.innerHTML=`<div class="mini-grid"><div class="pill"><b>Σενάριο Α</b><br>${flat85} διαμερίσματα x 85 τ.μ.</div><div class="pill"><b>Σενάριο Β</b><br>${flat110} διαμερίσματα x 110 τ.μ.</div><div class="pill"><b>Σενάριο Γ</b><br>${houses} κατοικίες / μεζονέτες</div><div class="pill"><b>Ενδεικτική αξία γης</b><br>${euro(last.value)}</div></div><p class="small">Τα σενάρια είναι προσεγγιστικά και δεν λαμβάνουν υπόψη χώρους στάθμευσης, κοινόχρηστα, αποστάσεις, σχήμα τεμαχίου, δεσμεύσεις και ειδικούς όρους άδειας.</p>`;}
+
+function renderFeasibility(){
+ const land=last.value;
+ const buildable=last.buildable;
+ const cc=+constructionCost.value||0, sp=+salePrice.value||0;
+ const soft=(+softCostPct.value||0)/100, cont=(+contingencyPct.value||0)/100, fin=(+financePct.value||0)/100, sales=(+salesCostPct.value||0)/100;
+ const construction=buildable*cc;
+ const softCost=construction*soft;
+ const contingency=construction*cont;
+ const finance=(land+construction+softCost+contingency)*fin;
+ const revenue=buildable*sp;
+ const salesCost=revenue*sales;
+ const totalCost=land+construction+softCost+contingency+finance+salesCost;
+ const profit=revenue-totalCost;
+ const roi=totalCost>0?(profit/totalCost*100):0;
+ const margin=revenue>0?(profit/revenue*100):0;
+ last.feas={land,construction,softCost,contingency,finance,salesCost,totalCost,revenue,profit,roi,margin,cc,sp};
+ const cls=profit>0?'profit':'warn';
+ feasibility.innerHTML=`<div class="mini-grid">
+  <div class="pill"><b>Αξία Γης</b><div class="kpi">${euro(land)}</div></div>
+  <div class="pill"><b>Κόστος Κατασκευής</b><div class="kpi">${euro(construction)}</div></div>
+  <div class="pill"><b>Soft Costs</b><div class="kpi">${euro(softCost)}</div></div>
+  <div class="pill"><b>Απρόβλεπτα</b><div class="kpi">${euro(contingency)}</div></div>
+  <div class="pill"><b>Χρηματοδοτικό κόστος</b><div class="kpi">${euro(finance)}</div></div>
+  <div class="pill"><b>Πωλήσεις / Marketing</b><div class="kpi">${euro(salesCost)}</div></div>
+  <div class="pill"><b>Συνολικό Κόστος</b><div class="kpi">${euro(totalCost)}</div></div>
+  <div class="pill"><b>Αναμενόμενες Πωλήσεις</b><div class="kpi">${euro(revenue)}</div></div>
+  <div class="pill ${cls}"><b>Μικτό Κέρδος</b><div class="kpi">${euro(profit)}</div></div>
+  <div class="pill ${cls}"><b>ROI</b><div class="kpi">${roi.toFixed(1)}%</div></div>
+  <div class="pill"><b>Profit Margin</b><div class="kpi">${margin.toFixed(1)}%</div></div>
+  <div class="pill"><b>Ένδειξη</b><div class="kpi">${roi>=25?'Ισχυρό':roi>=15?'Μέτριο/καλό':roi>0?'Οριακό':'Μη βιώσιμο'}</div></div>
+ </div>`;
+}
+
+function renderSWOT(){let s=['Υψηλός συντελεστής δόμησης','Διαθέσιμες βασικές υποδομές'],w=[],o=['Οικιστική ή επενδυτική αξιοποίηση','Πιθανή ανάπτυξη διαμερισμάτων/κατοικιών'],t=['Ανάγκη επίσημης πολεοδομικής επιβεβαίωσης','Έλεγχος τίτλου και τυχόν βαρών']; if(yes(road.value))s.push('Πρόσοψη σε εγγεγραμμένο δρόμο');else w.push('Χωρίς επιβεβαιωμένη πρόσοψη σε δρόμο'); if((+cityKm.value)>12)w.push('Μεγαλύτερη απόσταση από αστικό κέντρο'); if((+seaKm.value)<=5)s.push('Σχετικά κοντά στη θάλασσα'); swot.innerHTML=`<div><h3>Strengths / Δυνατά</h3><ul>${s.map(x=>`<li>${x}</li>`).join('')}</ul></div><div><h3>Weaknesses / Αδυναμίες</h3><ul>${(w.length?w:['Δεν εντοπίστηκε σοβαρή αδυναμία από τα δεδομένα']).map(x=>`<li>${x}</li>`).join('')}</ul></div><div><h3>Opportunities / Ευκαιρίες</h3><ul>${o.map(x=>`<li>${x}</li>`).join('')}</ul></div><div><h3>Threats / Κίνδυνοι</h3><ul>${t.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;}
+function saveComparable(){if(!last)calculate();comparisons.push({...last});renderComparison();alert('Προστέθηκε στη σύγκριση.');}
+function renderComparison(){compareBody.innerHTML=comparisons.map(x=>`<tr><td>${x.name}</td><td>${x.community}</td><td>${x.zone.split(' ')[0]}</td><td>${x.score}/100</td><td>${euro(x.value)}</td><td>${sqm(x.buildable)}</td></tr>`).join('') || '<tr><td colspan="6">Δεν προστέθηκαν ακόμη τεμάχια.</td></tr>';}
+function getCurrentPoint(){let la=parseFloat(lat.value),ln=parseFloat(lng.value); if(!isNaN(la)&&!isNaN(ln)) return [la,ln]; return communityCoords[community.value]||[35.1264,33.4299];}
+function initMap(){const pt=getCurrentPoint(); map=L.map('map').setView(pt,13); const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'}); const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles &copy; Esri'}); osm.addTo(map); L.control.layers({'OpenStreetMap':osm,'Satellite / Aerial':sat}).addTo(map); marker=L.marker(pt).addTo(map).bindPopup('Τεμάχιο / Περιοχή αξιολόγησης'); setTimeout(()=>map.invalidateSize(),300);}
+function updateMapFromCommunity(){const pt=communityCoords[community.value]||[35.1264,33.4299]; if(!lat.value && !lng.value){lat.value=pt[0].toFixed(6); lng.value=pt[1].toFixed(6);} updateMapFromInputs(false);}
+function updateMapFromInputs(showAlert=true){if(!map) return; const pt=getCurrentPoint(); marker.setLatLng(pt).bindPopup(`<b>${name.value||'Τεμάχιο'}</b><br>${community.value}<br>${zone.value.split(' - ')[0]}`).openPopup(); map.setView(pt,15); if(showAlert) alert('Ο χάρτης ενημερώθηκε.');}
+function openGoogleMap(){const pt=getCurrentPoint(); window.open(`https://www.google.com/maps?q=${pt[0]},${pt[1]}`,'_blank');}
+function openDLSMap(){window.open('https://eservices.dls.moi.gov.cy/#/national/geoportalmapviewer','_blank');}
+function copyCoordinates(){const pt=getCurrentPoint(); navigator.clipboard?.writeText(`${pt[0]}, ${pt[1]}`); alert(`Συντεταγμένες: ${pt[0]}, ${pt[1]}`);}
+function downloadPDF(){if(!last)calculate(); const {jsPDF}=window.jspdf; const doc=new jsPDF(); doc.setFont('helvetica'); doc.setFontSize(20); doc.text('LandScore Cyprus v7 Professional',14,18); doc.setFontSize(12); doc.text('Professional Land Potential Report',14,27); let y=42; const lines=[`Τεμάχιο: ${last.name}`,`Περιοχή: ${last.community}`,`Ζώνη: ${last.zone}`,`LandScore: ${last.score}/100 (${last.grade})`,`Εκτιμώμενη αξία γης: ${euro(last.value)}`,`Δυνητική δόμηση: ${sqm(last.buildable)}`,`Μέγιστη κάλυψη: ${sqm(last.cover)}`,`Όροφοι: ${last.floors}`,`Κατάλληλο για: ${last.use}`,`Συντεταγμένες: ${last.lat||'-'}, ${last.lng||'-'}`,`Φύλλο/Σχέδιο: ${last.sheetPlan||'-'} | Τεμάχιο: ${last.parcelNo||'-'}`]; lines.forEach(l=>{doc.text(l,14,y); y+=8}); y+=4; doc.setFontSize(14); doc.text('Ανάλυση Βαθμολογίας',14,y); y+=8; doc.setFontSize(11); Object.entries(last.breakdown).forEach(([k,v])=>{doc.text(`${k}: ${v}`,14,y); y+=7}); y+=6; doc.setFontSize(14); doc.text('Disclaimer',14,y); y+=8; doc.setFontSize(10); doc.text(doc.splitTextToSize('Το αποτέλεσμα είναι ενδεικτικό και δεν αντικαθιστά επίσημη εκτίμηση, πολεοδομική πληροφορία ή έλεγχο τίτλου.',180),14,y); doc.save('LandScore-Cyprus-v6-Report.pdf');}
+function resetAll(){document.querySelectorAll('input,textarea').forEach(e=>{if(e.id!=='area')e.value=''});area.value=598;populateCommunities();applyZone();report.classList.add('hidden');}
+function renderZoneTable(){zoneTable.innerHTML='<thead><tr><th>Ζώνη</th><th>Δόμηση</th><th>Κάλυψη</th><th>Όροφοι</th><th>Χρήση</th></tr></thead><tbody>'+Object.entries(zones).map(([k,v])=>`<tr><td>${k.split(' - ')[0]}</td><td>${v.b}%</td><td>${v.c}%</td><td>${v.f}</td><td>${v.use}</td></tr>`).join('')+'</tbody>';}
+init();
+</script>
+</body>
+</html>
 
