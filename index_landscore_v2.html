@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LandScore Cyprus v2</title>
+<style>
+:root{
+  --green:#1f7a3a;
+  --dark:#17351f;
+  --light:#f4f7f4;
+  --border:#d9e3d9;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Arial, sans-serif;
+  margin:0;
+  background:#f4f4f4;
+  color:#1f2933;
+}
+header{
+  background:linear-gradient(135deg,#1f7a3a,#0f3d22);
+  color:white;
+  padding:28px 18px;
+  text-align:center;
+}
+header h1{margin:0;font-size:34px}
+header p{margin:8px 0 0}
+.container{
+  max-width:1100px;
+  margin:24px auto;
+  padding:0 16px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.card{
+  background:white;
+  border-radius:14px;
+  padding:20px;
+  box-shadow:0 4px 16px rgba(0,0,0,.08);
+}
+.card h2{
+  margin-top:0;
+  color:var(--green);
+}
+label{
+  display:block;
+  margin-top:12px;
+  font-weight:bold;
+}
+input,select{
+  width:100%;
+  padding:11px;
+  margin-top:6px;
+  border:1px solid var(--border);
+  border-radius:8px;
+  font-size:15px;
+}
+button{
+  width:100%;
+  margin-top:18px;
+  padding:14px;
+  border:0;
+  border-radius:10px;
+  background:var(--green);
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover{background:#16642e}
+.result{
+  margin-top:18px;
+  background:#eef8ef;
+  border-left:6px solid var(--green);
+  padding:18px;
+  border-radius:10px;
+}
+.score{
+  font-size:42px;
+  font-weight:bold;
+  color:var(--green);
+}
+.badge{
+  display:inline-block;
+  padding:7px 12px;
+  border-radius:999px;
+  background:#dff2e4;
+  color:#145c2c;
+  font-weight:bold;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:12px;
+}
+td,th{
+  border-bottom:1px solid #e5e7eb;
+  padding:9px;
+  text-align:left;
+}
+.small{
+  color:#607060;
+  font-size:14px;
+}
+.footer{
+  text-align:center;
+  color:#667;
+  margin:30px 0;
+}
+@media(max-width:800px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🏡 LandScore Cyprus</h1>
+  <p>Πλατφόρμα ανάλυσης τεμαχίων και ακινήτων για την Κύπρο</p>
+</header>
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h2>Στοιχεία Τεμαχίου</h2>
+
+<label>Εμβαδόν τεμαχίου (τ.μ.)</label>
+<input id="area" type="number" value="600">
+
+<label>Πολεοδομική Ζώνη</label>
+<select id="zone">
+  <option value="Ka1">Κα1 - Οικιστική υψηλής ανάπτυξης</option>
+  <option value="Ka2">Κα2 - Οικιστική</option>
+  <option value="Ka3">Κα3 - Οικιστική</option>
+  <option value="Ka4">Κα4 - Οικιστική μέση</option>
+  <option value="Ka5">Κα5 - Οικιστική χαμηλότερη</option>
+  <option value="Ka6">Κα6 - Οικιστική χαμηλή</option>
+  <option value="H1">Η1 - Οικιστική/χωριό</option>
+  <option value="H2">Η2 - Οικιστική/χωριό</option>
+  <option value="H3">Η3 - Οικιστική/χωριό</option>
+  <option value="H4">Η4 - Χαμηλή οικιστική</option>
+  <option value="H5">Η5 - Πολύ χαμηλή οικιστική</option>
+  <option value="Eb">Εβ - Εμπορική</option>
+  <option value="T">Τουριστική</option>
+  <option value="B">Βιομηχανική</option>
+  <option value="G">Γεωργική</option>
+</select>
+
+<label>Συντελεστής Δόμησης (%)</label>
+<input id="building" type="number" value="90">
+
+<label>Ποσοστό Κάλυψης (%)</label>
+<input id="coverage" type="number" value="50">
+
+<label>Αριθμός Ορόφων</label>
+<input id="floors" type="number" value="2">
+
+<label>Πρόσοψη σε εγγεγραμμένο δρόμο</label>
+<select id="road">
+  <option value="yes">Ναι</option>
+  <option value="no">Όχι</option>
+</select>
+</div>
+
+<div class="card">
+<h2>Τοποθεσία & Υποδομές</h2>
+
+<label>Επαρχία</label>
+<select id="district">
+  <option value="limassol">Λεμεσός</option>
+  <option value="nicosia">Λευκωσία</option>
+  <option value="larnaca">Λάρνακα</option>
+  <option value="paphos">Πάφος</option>
+  <option value="famagusta">Αμμόχωστος</option>
+</select>
+
+<label>Απόσταση από πόλη (χλμ.)</label>
+<input id="city" type="number" value="8">
+
+<label>Απόσταση από θάλασσα (χλμ.)</label>
+<input id="sea" type="number" value="5">
+
+<label>Νερό</label>
+<select id="water">
+  <option value="yes">Ναι</option>
+  <option value="no">Όχι</option>
+</select>
+
+<label>Ηλεκτρισμός</label>
+<select id="electricity">
+  <option value="yes">Ναι</option>
+  <option value="no">Όχι</option>
+</select>
+
+<label>Αποχέτευση</label>
+<select id="sewerage">
+  <option value="yes">Ναι</option>
+  <option value="no">Όχι</option>
+</select>
+
+<label>Τιμή γης ανά τ.μ. (€)</label>
+<input id="price" type="number" value="250">
+
+<button onclick="calculate()">Υπολογισμός LandScore</button>
+</div>
+
+</div>
+
+<div class="card result" id="result">
+  <div class="score">LandScore: --/100</div>
+  <p>Συμπλήρωσε τα στοιχεία και πάτησε υπολογισμό.</p>
+</div>
+
+<div class="card">
+<h2>Πίνακας βασικών ζωνών</h2>
+<table>
+<tr><th>Ζώνη</th><th>Χρήση</th><th>Ενδεικτική αξιολόγηση</th></tr>
+<tr><td>Κα1–Κα4</td><td>Οικιστική</td><td>Υψηλή έως καλή ανάπτυξη</td></tr>
+<tr><td>Κα5–Κα6</td><td>Οικιστική</td><td>Χαμηλότερη πυκνότητα</td></tr>
+<tr><td>Η1–Η5</td><td>Οικιστική κοινοτήτων</td><td>Ανάλογα με περιοχή/υποδομές</td></tr>
+<tr><td>Εβ</td><td>Εμπορική</td><td>Υψηλή αξία όταν υπάρχει ζήτηση</td></tr>
+<tr><td>Τ</td><td>Τουριστική</td><td>Υψηλό ενδιαφέρον κοντά στη θάλασσα</td></tr>
+<tr><td>Β</td><td>Βιομηχανική</td><td>Ειδική χρήση</td></tr>
+<tr><td>Γ</td><td>Γεωργική</td><td>Χαμηλότερη αναπτυξιακή αξία</td></tr>
+</table>
+<p class="small">Σημείωση: Η v2 είναι ενδεικτικό εργαλείο αξιολόγησης και όχι επίσημη εκτίμηση ή πολεοδομική βεβαίωση.</p>
+</div>
+
+</div>
+
+<div class="footer">LandScore Cyprus v2</div>
+
+<script>
+const zoneScores = {
+  Ka1:20, Ka2:19, Ka3:18, Ka4:16, Ka5:13, Ka6:11,
+  H1:15, H2:14, H3:12, H4:10, H5:8,
+  Eb:19, T:18, B:11, G:5
+};
+
+function getCategory(score){
+  if(score>=90) return "★★★★★ Εξαιρετικό";
+  if(score>=80) return "★★★★ Πολύ Καλό";
+  if(score>=70) return "★★★ Καλό";
+  if(score>=60) return "★★ Μέτριο";
+  return "★ Χαμηλό Επενδυτικό Ενδιαφέρον";
+}
+
+function calculate(){
+  const area = Number(document.getElementById("area").value)||0;
+  const zone = document.getElementById("zone").value;
+  const building = Number(document.getElementById("building").value)||0;
+  const coverage = Number(document.getElementById("coverage").value)||0;
+  const floors = Number(document.getElementById("floors").value)||0;
+  const road = document.getElementById("road").value;
+  const city = Number(document.getElementById("city").value)||0;
+  const sea = Number(document.getElementById("sea").value)||0;
+  const water = document.getElementById("water").value;
+  const electricity = document.getElementById("electricity").value;
+  const sewerage = document.getElementById("sewerage").value;
+  const price = Number(document.getElementById("price").value)||0;
+
+  let score = 0;
+
+  score += zoneScores[zone] || 0;
+  score += Math.min(building / 120 * 15, 15);
+  score += Math.min(coverage / 70 * 10, 10);
+  score += area >= 500 ? 10 : area >= 300 ? 7 : 4;
+  score += road === "yes" ? 10 : 2;
+  score += city <= 5 ? 10 : city <= 15 ? 7 : city <= 30 ? 4 : 2;
+  score += sea <= 1 ? 5 : sea <= 5 ? 4 : sea <= 15 ? 2 : 1;
+  score += water === "yes" ? 2 : 0;
+  score += electricity === "yes" ? 2 : 0;
+  score += sewerage === "yes" ? 1 : 0;
+  score += price > 0 ? 5 : 0;
+
+  score = Math.round(Math.min(score,100));
+
+  const buildable = area * (building/100);
+  const covered = area * (coverage/100);
+  const value = area * price;
+
+  let suitability = [];
+  if(zone.startsWith("Ka") || zone.startsWith("H")) suitability.push("Κατοικίες", "Μικρή πολυκατοικία");
+  if(zone==="Eb") suitability.push("Καταστήματα", "Γραφεία", "Μικτή ανάπτυξη");
+  if(zone==="T") suitability.push("Τουριστική ανάπτυξη", "Εξοχικές κατοικίες");
+  if(zone==="B") suitability.push("Αποθήκες", "Βιομηχανική χρήση");
+  if(zone==="G") suitability.push("Γεωργική χρήση", "Μακροπρόθεσμη επένδυση");
+
+  document.getElementById("result").innerHTML = `
+    <div class="score">LandScore: ${score}/100</div>
+    <p><span class="badge">${getCategory(score)}</span></p>
+    <table>
+      <tr><td>Εκτιμώμενη αξία γης</td><td><b>€${value.toLocaleString("el-CY")}</b></td></tr>
+      <tr><td>Δυνητική δομήσιμη επιφάνεια</td><td><b>${buildable.toFixed(0)} τ.μ.</b></td></tr>
+      <tr><td>Μέγιστη κάλυψη</td><td><b>${covered.toFixed(0)} τ.μ.</b></td></tr>
+      <tr><td>Όροφοι</td><td><b>${floors}</b></td></tr>
+      <tr><td>Κατάλληλο για</td><td><b>${suitability.join(", ")}</b></td></tr>
+    </table>
+    <p class="small">Το αποτέλεσμα είναι ενδεικτικό και βασίζεται σε απλοποιημένο μοντέλο αξιολόγησης.</p>
+  `;
+}
+</script>
+
+</body>
+</html>
